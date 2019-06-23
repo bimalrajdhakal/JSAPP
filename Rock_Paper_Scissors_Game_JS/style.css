@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap");
+*, *::before, *::after, body, html {
+  font-family: "PT Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.none {
+  display: none !important;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  width: 75%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.container > div {
+  flex-grow: 1;
+}
+
+.choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.choice img {
+  width: 80%;
+  cursor: pointer;
+}
+
+#scores-board {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#scores-board * {
+  font-weight: 400;
+}
+#scores-board > h1 {
+  font-weight: bolder;
+  color: #B05875;
+  font-size: 3.4em;
+}
+
+#model {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+#model .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#model > .content div img {
+  width: 25%;
+}
